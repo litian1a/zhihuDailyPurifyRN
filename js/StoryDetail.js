@@ -100,8 +100,7 @@ export default class StoryDetail extends Component {
                             <Image
                                 style={styles.backIcon}
                                 source={{uri: 'ic_back_white'}}
-                                resizeMode='conta
-                                in'/>
+                                resizeMode='contain'/>
                         </View>
                     </TouchableNativeFeedback>
                     <View style={{flex: 1}}/>

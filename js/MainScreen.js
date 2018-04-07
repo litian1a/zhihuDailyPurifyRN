@@ -40,13 +40,13 @@ export default class MainScreen extends Component {
     closeDrawer=()=>{
         if(this.refs['drawer'])
         this.refs['drawer'].closeDrawer()
-    }
+    };
 
     openDrawer=()=>{
         if(this.refs['drawer'])
             this.refs['drawer'].openDrawer()
 
-    }
+    };
 
 
     _onRefresh = () =>{
@@ -172,7 +172,7 @@ export default class MainScreen extends Component {
 
         return (
             <View style={{flex: 1}}>
-                {this._renderPage(null,topData.background,topData.description)}
+                {MainScreen._renderPage(null,topData.background,topData.description)}
                 <View style={styles.editors}>
                     <Text style={styles.editorsLable}>主编:</Text>
                     {editorsAvator}
@@ -192,7 +192,7 @@ export default class MainScreen extends Component {
             </View>
         );
     };
-    _renderPage(id,image,title){
+    static _renderPage(id, image, title){
 
         return (
             <TouchableOpacity  key={id} style={{flex:1, height: 200}}>
